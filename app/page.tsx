@@ -277,7 +277,7 @@ export default function HomePage() {
               </a>
 
               <a
-                href="tel:+573172933591"
+                href="tel:+573152571185"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-6 py-3.5 text-base font-semibold text-slate-100 shadow-[0_0_0_1px_rgba(51,65,85,0.3)] transition hover:border-slate-500 hover:bg-slate-800"
               >
                 <PhoneCall className="h-4 w-4" />
@@ -605,7 +605,7 @@ export default function HomePage() {
               Agendar por WhatsApp
             </a>
             <a
-              href="tel:+573172933591"
+              href="tel:+573152571185"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-7 py-3.5 text-base font-semibold text-slate-100 shadow-[0_0_0_1px_rgba(51,65,85,0.3)] transition hover:border-slate-500 hover:bg-slate-800"
             >
               <PhoneCall className="h-5 w-5" />
