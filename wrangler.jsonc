@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mecanocheck",
+  "compatibility_date": "2026-09-18",
+  "main": ".open-next/worker.js",
+  "assets": {
+    "bucket": ".open-next/assets",
+    "base_url": "/"
+  }
+}
