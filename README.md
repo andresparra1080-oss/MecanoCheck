@@ -107,8 +107,24 @@ D) Docker (autohospedaje)
 Contacto / Soporte
 
 Si quieres, puedo:
-- Añadir un workflow de GitHub Actions para deploy automático a Cloudflare Pages/Workers.
+- Añadir un workflow de GitHub Actions para deploy automático a Cloudflare Pages/Workers. (ya incluido en .github/workflows/deploy.yml)
 - Ejecutar npm audit fix y revisar cambios antes de commitear.
-- Crear un archivo .env.example con las variables que debes configurar en CI.
+- Crear un archivo .env.example con las variables que debes configurar en CI. (ya incluido: .env.example)
 
-¡Listo! El README se ha añadido al repositorio con instrucciones. Si quieres que incluya capturas de pantalla, ejemplos de enlaces o un paso a paso para Vercel, indícalo y lo agrego.
+CI / Deploy con GitHub Actions (Cloudflare Workers via Wrangler)
+
+1) Añadir Secrets en tu repositorio (GitHub → Settings → Secrets → Actions):
+   - CF_ACCOUNT_ID: tu Cloudflare Account ID
+   - CF_API_TOKEN: token con permisos para trabajar con Workers (y Assets si aplica)
+
+2) El workflow se activará en pushes a la rama main y hará los pasos:
+   - npm ci
+   - npm run build
+   - npm run opennext:build (genera .open-next)
+   - npx wrangler deploy
+
+3) Si prefieres Cloudflare Pages (export estático) en lugar de Workers, puedo crear un workflow alternativo que suba la carpeta out a Pages.
+
+¡Listo! El workflow ya está en el repo. Después de añadir los Secrets, cualquier push a main disparará el build y deploy automático.
+
+¡Dime si quieres que añada el workflow para Pages en lugar de Workers o uno adicional para Pages también!
