@@ -1,1 +1,2 @@
-exports.defineConfig = function (config) { return config; };\n
+exports.defineConfig = function (config) { return config; };
+
