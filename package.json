@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "npx opennextjs-cloudflare build",
-    "opennext:build": "npx opennextjs-cloudflare build",
-    "deploy": "npx opennextjs-cloudflare deploy",
+    "opennext:build": "echo 'OpenNext build skipped for static Pages export'",
+    "deploy": "echo 'Static export: deploy via Cloudflare Pages'",
     "start": "next start",
     "lint": "eslint"
   },
