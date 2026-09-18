@@ -1,8 +1,8 @@
-import { defineConfig } from "@opennextjs/core";
+// Export a plain config object for OpenNext. Avoid importing @opennextjs/core to prevent bundling issues.
+// OpenNext accepts a plain default export as configuration.
 
-export default defineConfig({
+const config = {
   cache: {
-    // minimal cache configuration — tune later for your account
     static: {
       maxAge: 31536000,
       staleWhileRevalidate: 86400,
@@ -11,4 +11,6 @@ export default defineConfig({
   assets: {
     directory: ".open-next/assets",
   },
-});
+};
+
+export default config;
