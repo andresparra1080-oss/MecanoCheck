@@ -1,0 +1,1 @@
+declare module '@opennextjs/core' {\n  // Minimal stub types for build-time only. Adjust if you need stronger typing.\n  export function defineConfig<T = any>(config: T): T;\n  const _default: <T = any>(config: T) => T;\n  export default _default;\n}\n
