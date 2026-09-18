@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "opennext:build": "echo 'OpenNext build skipped for static Pages export'",
-    "deploy": "echo 'Static export: deploy via Cloudflare Pages'",
     "start": "next start",
     "lint": "eslint"
   },
@@ -17,8 +15,6 @@
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.20.6",
-    "@opennextjs/core": "^0.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
